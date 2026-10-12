@@ -1,0 +1,174 @@
+*{
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+}
+
+body{
+   font-family: 'Courier New', Courier, monospace;
+   color: #333;
+   background-color: #fcfc;
+   line-height: 1.6;
+}
+
+.page{
+   max-width: 1200px;
+   margin: auto;
+   padding: 0 20px;
+}
+
+header{
+   background-color: #fff;
+   border-bottom: 1 px solid #eee;
+   padding: 15 px 0;
+   position: sticky;
+   top: 0;
+   z-index: 100;
+}
+
+.container_topbar{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.container_topbar a{
+   text-decoration: none;
+   color: #444;
+   font-weight: 500;
+   transition: color 0.3s ease;
+}
+
+.container_topbar a:hover{
+   color: #e27d60;
+}
+
+.logo{
+   font-size: 24px;
+   font-weight: bold;
+   color: #2b7a78;
+}
+
+.banner{
+   position: relative;
+   margin: 30 px 0;
+   border-radius:  12 px;
+   overflow: hidden;
+   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.banner_image_img{
+   width: 100%;
+   height: 400px;
+   object-fit: cover;
+   display: block;
+}
+
+.banner_info{
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   background: linear-gradient(transition, rgba(0, 0, 0, 0.75));
+   color: #fff;
+   padding: 30px 20px 20px;
+}
+
+.info_for_banner{
+   font-size: 18px;
+   margin-bottom: 15px;
+   max-width: 600px;
+}
+
+.byket{
+   background-color: #e27d60;
+   color: #fff;
+   border-radius: none;
+   padding: 12px 24px;
+   border-radius: 6px;
+   font-size: 16px;
+   cursor: pointer;
+   transition: background-color 0.3s ease;
+}
+
+.byket:hover{
+   background-color: #c85a3f;
+}
+
+.week{
+   margin: 50px 0;
+}
+
+.text{
+   font-size: 28px;
+   margin-bottom: 8px;
+   color: #2b7a78;
+}
+
+.week_text{
+   color: #666;
+   margin-bottom: 25px;
+}
+
+.container{
+   display: grid;
+   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+   gap: 25px;
+}
+
+.flowers{
+   background: #fff;
+   border-radius: 8px;
+   overflow: hidden;
+   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.flowers img{
+   width: 100%;
+   height: 220px;
+   object-fit: cover;
+}
+
+.flower-info{
+   padding: 15px;
+}
+
+.flo_text{
+   font-weight: bold;
+   font-size: 18px;
+   margin-bottom: 5px;
+}
+
+.flower-info .week_text{
+   font-size: 14px;
+   color: #777;
+   margin-bottom: 10px;
+}
+
+.price{
+   font-size: 18px;
+   font-weight: bold;
+   color: #e27d60;
+}
+
+.delivery{
+   background-color: #f4f9f9;
+   padding: 30px;
+   border-radius: 10px;
+   margin: 40px 0;
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+   gap: 20px;
+}
+
+.del{
+   font-weight: bold;
+   font-size: 16px;
+   color: #2b7a78;
+   margin-bottom: 4px;
+}
+
+.ddd{
+   font-size: 14px;
+   color: #555;
+}
